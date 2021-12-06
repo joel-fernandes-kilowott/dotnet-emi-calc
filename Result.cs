@@ -6,10 +6,7 @@ namespace EMICalc
     {
         public double EMI(double P, double i, double t, double n)
         {
-            
-            //i = i / 100;
-             //emi = (P * Math.Pow(1 + i/n ,t*n));
-            //double r = m / 24;
+            //Equation for EMI calculation
             double emi = (P * Math.Pow((1 + i / n), (t * n)))/24;
 
             return emi;
