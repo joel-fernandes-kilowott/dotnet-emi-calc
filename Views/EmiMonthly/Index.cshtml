@@ -1,0 +1,22 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model EmiMvc.Models.Request
+<!DOCTYPE html>
+<html>
+   <body>
+       <form method="post" action="EmiMonthly/Output">
+      <br />
+      <h3> EMI </h3>
+      <label>Enter the Principal Amount :</label>
+     <input type="text" name="principal">
+     <label>Enter the Rate of Interest : </label>
+     <input type="text" name="rate">
+     <label>Enter the Loan Duration : </label>
+     <input type="text" name="duration">
+     <input type="submit" value="Submit">
+     </form>
+    </body>
+</html>
